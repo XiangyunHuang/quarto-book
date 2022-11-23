@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "quarto-test"
+  author: "Jane Doe"
+  date: "11/23/2022"
+  chapters:
+    - index.qmd
+    - part: getting-started.qmd
+      chapters:
+        - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: book
+  docx:
+    toc: true
+    toc-depth: 3
+    crossref:
+      chapters: true
+
+
