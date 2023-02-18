@@ -3,3 +3,11 @@
 .RData
 .Ruserdata
 .quarto/
+
+/.quarto/
+
+.DS_Store
+
+data/
+*_files/
+
