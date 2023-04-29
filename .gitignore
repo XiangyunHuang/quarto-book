@@ -10,4 +10,5 @@
 
 data/
 *_files/
-
+_book/
+_main.tex

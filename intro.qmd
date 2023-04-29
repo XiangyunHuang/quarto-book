@@ -1,35 +1,5 @@
-# Introduction
+# 介绍 {#sec-introduction}
 
 This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.
-
-```{r}
-1 + 1
-```
-
------------ ------- --------------- -------------------------
-   First    row                12.0 Example of a row that
-                                    spans multiple lines.
-
-  Second    row                 5.0 Here's another one. Note
-                                    the blank line between
-                                    rows.
------------ ------- --------------- -------------------------
-
-: Here's a multiline table without a header.
-
-
-----------------  -----------------------  ---------------  
-add_annotations   add_histogram            add_polygons     
-add_area          add_histogram2d          add_ribbons      
-add_bars          add_histogram2dcontour   add_scattergeo   
-add_boxplot       add_image                add_segments     
-add_choropleth    add_lines                add_sf           
-add_contour       add_markers              add_surface      
-add_data          add_mesh                 add_table        
-add_fun           add_paths                add_text         
-add_heatmap       add_pie                  add_trace        
-----------------  -----------------------  ---------------  
-
-: **plotly** 包可以绘制丰富的统计图形 {#tbl-plotly-layers}

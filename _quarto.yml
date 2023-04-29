@@ -1,20 +1,22 @@
 project:
   type: book
+  output-dir: _book
 
 lang: zh
 
 book:
-  title: "quarto-test"
-  author: "Jane Doe"
+  title: "Quarto 中文书籍模版"
+  author: "黄湘云"
   date: "11/23/2022"
+  output-file: "_main"
   chapters:
     - index.qmd
-    - part: getting-started.qmd
+    - part: data-preperation.qmd
       chapters:
         - intro.qmd
     - references.qmd
   appendices:
-    - summary.qmd
+    - appendix-a.qmd
   repo-branch: main
   search: true
 
@@ -23,9 +25,30 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    code-link: true
+    code-line-numbers: true
+    include-in-header:
+      - header.html
   pdf:
     documentclass: book
     include-in-header: preamble.tex
+    classoption: [UTF8,twoside,openany,table]
+    keep-tex: true
+    lof: true
+    lot: true
+    geometry:
+      - tmargin=2.5cm
+      - bmargin=2.5cm
+      - lmargin=3.0cm
+      - rmargin=2.0cm
+    highlight-style: github
+    number-sections: true
+    top-level-division: chapter
+    colorlinks: true
+    mathspec: true
+    link-citations: true
+    crossref:
+      chapters: true
   docx:
     toc: true
     toc-depth: 3
